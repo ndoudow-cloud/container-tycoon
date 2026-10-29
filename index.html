@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Container Tycoon Online</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game"></div>
+<header class="topbar"><div class="brand"><span class="logo">CT</span><div><strong>CONTAINER TYCOON</strong><small>WEB DEMO · BẢN CHƠI THỬ</small></div></div><div class="stats"><span>🪙 <b id="coins">15.000</b></span><span>📦 <b id="owned">0</b> món</span></div></header>
+<aside class="left-panel"><div class="panel-title">⚓ CẢNG ĐẤU GIÁ</div><p class="muted">Đấu giá container, mở hàng và thử vận may của bà.</p><div id="auctions"></div><div class="room-box"><b>🌐 Chế độ chơi</b><span>Demo trên trình duyệt · tiến trình lưu trên máy này</span><button id="reset">Chơi lại từ đầu</button></div></aside>
+<aside class="right-panel"><div class="tabs"><button class="tab active" data-tab="warehouse">📦 Kho hàng</button><button class="tab" data-tab="shop">🏷️ Cửa hàng</button></div><div id="inventory"></div><div class="hint">Điều khiển: WASD hoặc phím mũi tên. Trên điện thoại, dùng nút điều hướng ở góc trái.</div></aside>
+<div class="controls" id="controls"><button data-move="forward">▲</button><div><button data-move="left">◀</button><button data-move="back">▼</button><button data-move="right">▶</button></div></div>
+<div class="bottom-hud"><span>📍 KHU CẢNG</span><span id="status">Sẵn sàng chơi</span></div><div id="toast"></div>
+<div class="modal-backdrop" id="modal"><div class="modal"><button class="close" id="close-modal">×</button><div class="modal-icon">📦</div><h2>Container đã mở!</h2><p>Bà tìm thấy những món đồ này.</p><div id="found-items"></div><button class="primary" id="collect">Đưa hàng vào kho</button></div></div>
+<script type="module" src="game.js"></script>
+</body></html>
